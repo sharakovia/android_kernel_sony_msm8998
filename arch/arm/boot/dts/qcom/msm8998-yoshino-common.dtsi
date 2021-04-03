@@ -179,9 +179,6 @@
 			doze_default_time = <35>;
 			doze_glove_mode_time = <35>;
 			doze_cover_mode_time = <35>;
-			wakeup_gesture_lpm_disabled = <1>;
-			wakeup_gesture_timeout = <2000>;
-			wakeup_gesture_supported = <1>;
 			wakeup_gesture {
 				double_tap {
 					gesture_code = <0x0003>;
@@ -191,12 +188,12 @@
 					};
 					event_01 {
 						type = <1>; /* KEY */
-						code = <143>; /* WAKEUP */
+						code = <531>; /* TOUCHPAD_ON */
 						down = <1>;
 					};
 					event_02 {
 						type = <1>; /* KEY */
-						code = <143>; /* WAKEUP */
+						code = <531>; /* TOUCHPAD_ON */
 						down = <0>;
 					};
 					event_03 {
